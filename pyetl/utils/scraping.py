@@ -4,11 +4,11 @@ import tempfile
 import zipfile
 import os 
 
+# Estrutura de requisição dos arquivos
+link = 'http://web.antaq.gov.br/Sistemas/ArquivosAnuario/Arquivos/{}.zip'
+    
 # Definindo as classe de dados da antaq 
 class antaq_data:
-    
-    # Estrutura de requisição dos arquivos
-    link = 'http://web.antaq.gov.br/Sistemas/ArquivosAnuario/Arquivos/{}.zip'
     
     # Definindo downloader dos dados 
     def downloader(self,year:list):
@@ -70,7 +70,7 @@ class antaq_data:
 
         # Extraindo arquivos baixados
         for files in down : 
-            l = self.extrator(raw_data=True,contents=files) 
+            l = self.extrator(raw_data=False,contents=files) 
 
             # Salvando os arquivos de listas
             path.append(l)
