@@ -1,6 +1,7 @@
 # Pacotes 
 from pyspark.sql import SparkSession
 from utils.scraping import antaq_data
+import os 
 
 # Criando ou Utilizando uma sessão spark 
 spark = SparkSession.builder.getOrCreate()
