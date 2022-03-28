@@ -1,7 +1,6 @@
 # Pacotes 
 from Extract import * 
 
-
 # Criando a função de transformação 
 def transformation(dataframe):
 
