@@ -22,7 +22,7 @@ class BaseModel(Model):
         database = database 
 
 # Criando os modelos relacionais 
-# Acordos Bilaterais 
+# Carga Conteinerizada
 class Carga_Conteinerizada(BaseModel):
     id_carga = TextField(primary_key=True)
     cd_mercadoria_conteinerizada = TextField()
