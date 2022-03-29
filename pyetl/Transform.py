@@ -1,6 +1,3 @@
-# Pacotes 
-from Extract import * 
-
 # Criando a função de transformação 
 def transformation(dataframe):
 
@@ -136,7 +133,10 @@ def transformation(dataframe):
 
     # Ajustando as colunas faltantes na tabela carga carga 
     # Tabelas Faltantes
-    Falta = atracacao.select('IDAtracacao','Ano','Mes','SGUF','Porto Atracacao')
+    Falta = atracacao.select('IDAtracacao','Ano','Mes','SGUF','Porto Atracação')
     carga = carga.join(Falta,['IDAtracacao'],'left')
 
+    # substituindo valores nulos
+    atracacao = atracacao.na.fill(value='Null')
+    cargo = carga.na.fill(value='Null')
     return atracacao, carga
