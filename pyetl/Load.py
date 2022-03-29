@@ -1,11 +1,5 @@
 # Pacotes
 from utils import export_db 
-from Transform import transformation
-from Extract import extract 
-
-# Importando  dados 
-dataframe = extract()
-atracacao,carga = transformation(dataframe)
 
 # Exportando os dados para dataframe 
 def export_atracacao(atracacao):
@@ -86,5 +80,6 @@ def export_carga(carga):
             SGUF =  field[29],
             porto_atracacao =  field[30]
         ).on_conflict_replace().execute()
+
     return print("Sucess to export data")
 
