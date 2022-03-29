@@ -119,13 +119,9 @@ def transformation(dataframe):
             'FlagCabotagem',
             'VLPesoCargaBruta',
             'FlagCabotagemMovimentacao',
-            #'Ano da data de início da operação da atracação', 
             'FlagConteinerTamanho',
-            #'Mês da data de início da operação da atracação',
             'FlagLongoCurso' ,
-            #'Porto Atracação',
             'FlagMCOperacaoCarga',
-            #'SGUF',
             'FlagOffshore',
             'VLPesoCargaBruta',
         ]
@@ -138,5 +134,10 @@ def transformation(dataframe):
 
     # substituindo valores nulos
     atracacao = atracacao.na.fill(value='Null')
-    cargo = carga.na.fill(value='Null')
+    carga = carga.na.fill(value='Null')
+    
+    # removendo colunas repetidas 
+    atracacao = atracacao.drop_duplicates()
+    carga = carga.drop_duplicates()
+    
     return atracacao, carga
