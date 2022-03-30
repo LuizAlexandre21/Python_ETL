@@ -60,13 +60,13 @@ class antaq_data:
 
 
     # Definindo o main 
-    def main(self):
+    def main(self,year):
 
         # Lista de arquivos 
         path = []
 
         # Download de arquivos para os anos de 2022
-        down  = self.downloader(year=['2022'])
+        down  = self.downloader([year])
 
         # Extraindo arquivos baixados
         for files in down : 
