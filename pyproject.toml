@@ -6,6 +6,10 @@ authors = ["Luiz_Alexandre21 <luizalexandre21@outlook.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pyspark = "^3.2.1"
+requests = "^2.27.1"
+peewee = "^3.14.10"
+DateTime = "^4.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
