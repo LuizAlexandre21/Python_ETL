@@ -6,13 +6,13 @@ import os
 # Criando ou Utilizando uma sessão spark 
 spark = SparkSession.builder.getOrCreate()
 
-def extract():
+def extract(year:int):
     # Solicitando os dados da antaq
     # Abrindo a classe para solicitar antaq
     antaq = antaq_data()
 
     # Download de dados 
-    path = antaq.main()
+    path = antaq.main(year)
 
     # Carregando arquivos baixados 
     # Criando dicionarios com os arquivos 
