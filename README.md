@@ -55,7 +55,7 @@ dada a utilização do tutorial apresentado pelo Bruno Katekawa, disponibilizado
 
 
 #### Apache Airflow 
-O apache airflow é um código aberto plataforma de gerenciamento de fluxo de trabalho para pipelines de engenharia de dados. Tudo começou em Airbnb em outubro de 2014[2] como uma solução para os fluxos de trabalho de trabalho cada vez mais complexos da empresa. Fluxo de fluxo de permissão para o Airbnb autorizar e agendar programaticamente seus fluxos de trabalho e monitores de atravados do fluxo de ar incorporado interface do usuário.[3][4] Desde o início, o projeto foi tornado de código aberto, tornado-se um Incubadora Apache projeto em março de 2016 e um nível superior Apache Software Foundation projeto em janeiro de 2019.
+O apache airflow é um código aberto plataforma de gerenciamento de fluxo de trabalho para pipelines de engenharia de dados. Tudo começou em Airbnb em outubro de 2014. como uma solução para os fluxos de trabalho de trabalho cada vez mais complexos da empresa. Fluxo de fluxo de permissão para o Airbnb autorizar e agendar programaticamente seus fluxos de trabalho e monitores de atravados do fluxo de ar incorporado interface do usuário. Desde o início, o projeto foi tornado de código aberto, tornado-se um Incubadora Apache projeto em março de 2016 e um nível superior Apache Software Foundation projeto em janeiro de 2019.
 
 - Para configuração do Apache Airflow é recomendada a utilização do tutorial apresentado no (dev.to)[https://dev.to/citizenkot/apache-airflow-installation-mysql-celery-4n76] e 
 
