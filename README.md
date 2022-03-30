@@ -36,7 +36,7 @@ Antes de começar, verifique a instalação dos seguintes requisitos
 
 ### Configurando Pré-requisitos 
 #### Poetry 
-Poetry ajuda você a declarar, gerenciar e instalar dependências de projetos Python, garantindo que você tenha a pilha certa em todos os lugares. Poetry traz ao Python o tipo de ferramenta de gerenciamento de projetos “tudo em um” que Go e Rust apreciam há muito tempo. Permitir que os projetos tenham dependências determinísticas com versões específicas de pacotes para que sejam construídos consistentemente em diferentes locais. O Poetry também facilita a criação, empacotamento e publicação de projetos e bibliotecas no PyPI para que outros possam compartilhar os frutos de seus trabalhos em Python. O
+Poetry ajuda você a declarar, gerenciar e instalar dependências de projetos Python, garantindo que você tenha a pilha certa em todos os lugares. Poetry traz ao Python o tipo de ferramenta de gerenciamento de projetos “tudo em um” que Go e Rust apreciam há muito tempo. Permitir que os projetos tenham dependências determinísticas com versões específicas de pacotes para que sejam construídos consistentemente em diferentes locais. O Poetry também facilita a criação, empacotamento e publicação de projetos e bibliotecas no PyPI para que outros possam compartilhar os frutos de seus trabalhos em Python. 
 
 ##### Instalando o poetry
 - Linux 
@@ -129,19 +129,46 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 #### Porque a utilização do poetry ?
 
+Uma das vantagens da utilização do Poetry é a capacidade de partilhar ambientes virtuais entre projetos, sempre que isso for necessário. Portanto em projetos com mais de um usuario em seu desenvolvimento ou utilização, o poetry facilita a utilização de todos os componentes sem a necessidade de uma instalação manual de dependencias
 
 #### Qual a motivação da escolha de um banco de dados SQL ao invés de um banco de dados NoSQL? E porque a escolha do MySQL?
 
+A utilização da linguagem SQL no projeto traz uma serie de beneficios. Entre as principais vantagens podemos citar:
+
+- Proporciona maior agilidade para migração de aplicações e informações
+- Menor quantidade de erros em manipulações dos dados
+- Maior padronização das operações que envolvem o uso de dados
+- Possibilidade de integrar os bancos de dados a mais aplicações,
+
+A utilização da linguagem NoSQl no projeto traz os seguintes beneficios :
+
+- Base de dados orientada para objetos flexível
+- Facilidade em adicionar novos dados.
+- Dados sempre disponíveis.
+- Necessitam de muito menos manutenção, sendo a reparação e distribuição de dados feita, na sua maioria, automaticamente. Numa base de dados Relacional (SQL), é sempre necessário um administrador, responsável pela mesma.
+- O custo desta base de dados é mais reduzido.
+
+
+Para o nosso projeto, a utilização de bancos relacionais apresentam vantagens em relação a bancos de dados não relacionais, pois as tabelas brutas e tratadas apresentam chaves relacionais entre as tabelas, assim apresentando a necessidade de bancos relacionais no projetos, afim de apresentar um maior desempenho e um melhor relacionamento nas consultas dos dados acerca dos dados da antaq. 
 
 #### Porque a utilização de ORM para a manipulação do banco de dados 
 
+Um ORM (Object-Relational Mapping) é um Framework ou um conjunto de classes que permite que você faça este trabalho sem precisar escrever códigos de conexão com o banco, querys de SQL a todo momento, preservando as características de orientação a objetos da linguagem face à natureza relacional dos bancos de dados atuais.
+
+As vantagens da utilização de um ORM são: 
+
+- Codigo menor e programa mais produtivo 
+- Código mais elegante 
+- Maior facilidade na manutenção do projeto 
+- Maior Padronização da sua aplicação 
 
 #### Vantagens da utilização do PySpark no projeto 
+Apache Spark tem como seu principal componente RDDs Resilient Distributed Dataset (Conjunto de dados distribuído e resiliente), uma estrutura de dados somente leitura distribuída em cluster que é mantida de uma maneira tolerante a falhas, RDDs são os componentes de mais baixo nível na API do apache spark e são a fundação para desenvolvimento de estruturas de mais alto nível como Dataframes.
+
+Spark facilita a implementação de algoritmos iterativos, na qual precisam ler o conjunto dados completamente múltiplas vezes e ainda análise de dados exploratória onde buscas SQL são utilizadas para um melhor entendimento dos dados, Spark reduz a latência deste tipo de aplicação drasticamente quando comparado com MapReduce
 
 
-#### Porque da utilização de um webscraping ao inves de uma solicitação junto ao Qlik? 
-
-
+## Contato 
 ## Contato 
 
 :bust_in_silhouette: Luiz Alexandre Moreira Barros 
