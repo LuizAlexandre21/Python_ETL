@@ -1,5 +1,5 @@
 # Pacotes
-from utils import export_db 
+from utils.export_db import *
 
 # Exportando os dados para dataframe 
 def export_atracacao(atracacao):
@@ -69,16 +69,14 @@ def export_carga(carga):
             vl_peso_carga_bruta =  field[18],
             qt_carga =  field[19],
             flag_cabotagem =  field[20],
-            vl_peso_carga_bruta =  field[21],
-            flag_cabotagem_movimentacao =  field[22],
-            flag_container_tamanho =  field[23],
-            flag_mc_opercacao_carga =  field[24],
-            flag_off_shore =  field[25],
-            vl_peso_carga_bruta =  field[26],
-            ano =  field[27],
-            mes =  field[28],
-            SGUF =  field[29],
-            porto_atracacao =  field[30]
+            flag_cabotagem_movimentacao =  field[21],
+            flag_container_tamanho =  field[22],
+            flag_mc_opercacao_carga =  field[23],
+            flag_off_shore =  field[24],
+            ano =  field[25],
+            mes =  field[26],
+            SGUF =  field[27],
+            porto_atracacao =  field[28]
         ).on_conflict_replace().execute()
 
     return print("Sucess to export data")
