@@ -15,6 +15,7 @@ O projeto ainda se encontra em sua versão de desenvolvimento, e as próximas at
 - [x] Otimização da performance das solicitações
 - [x] Desenvolvimento da extração endogena de arquivos do Qlik 
 - [x] Estruturação dos bancos de dados
+- [x] Coletor de arquivos baixados
 - [ ] Otimização das DAGs 
 
 
@@ -104,8 +105,11 @@ $ sudo airflow webserver
 $ sudo airflow scheduler
 $ sudo airflow worker 
 ```
+### Reexecução do projeto
 
+Para a reexecução do projeto, devemos deletar os arquivos .zip e as pastas com os arquivos baixados.
 
+    
 ## 📫 Contribuindo para Python - ETL
 <!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 Para contribuir com Python - ETL, siga estas etapas:
