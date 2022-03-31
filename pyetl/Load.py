@@ -33,10 +33,11 @@ def export_atracacao(atracacao):
             espera_atracacao = field[23],
             espera_inicio_op = field[24],
             espera_desatracacao = field[25],
-            tempo_atracado = field[26],
-            tempo_estadia = field[27],
-            mes = field[28],
+            tempo_operacao = field[26],
+            tempo_atracado = field[27],
+            tempo_estadia = field[28],
             ano = field[29],
+            mes = field[30]
         ).on_conflict_replace().execute()
     return print("Sucess to export data")
 
