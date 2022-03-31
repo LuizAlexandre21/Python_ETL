@@ -7,14 +7,7 @@ Agência Nacional de Transportes Aquaviários (ANTAQ) é uma autarquia especial 
 
 ---
 
-## Informações do projeto 
-![GitHub repo size](https://img.shields.io/github/repo-size/LuizAlexandre21/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/LuizAlexandre21/Python_ETL/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/LuizAlexandre21/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/LuizAlexandre21/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/LuizAlexandre21/README-template?style=for-the-badge)
-
-### Ajustes e melhorias 
+## Ajustes e melhorias 
 
 O projeto ainda se encontra em sua versão de desenvolvimento, e as próximas atualizações serão voltadas nas seguintes tarefas:
 
@@ -77,6 +70,7 @@ O MySQL é um sistema de gerenciamento de banco de dados (SGBD), que utiliza a l
 - **/airflow** :
     - **ETL_<year>** : Arquivo para extração, tratamento e carregamento para os dados da antaq utilizados no processamento do airflow, para um determinado ano
 
+- **Solicitações_SQL_Economistas** : Solicitações dos dados para tabelas de economistas ( Questão 1-c))
 - **Extract.py** : Arquivo para a extração dos dados disponibilizados no anuario estatistico da Antaq 
 - **Transform.py**  : Arquivo para o tratamento dos arquivos extraidos anteriormente pela função extract 
 - **Load.py** : Arquivo para o carregamento dos arquivos extraidos e tratados para as tabelas finais
