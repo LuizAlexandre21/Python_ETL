@@ -9,7 +9,7 @@ Agência Nacional de Transportes Aquaviários (ANTAQ) é uma autarquia especial 
 
 ## Informações do projeto 
 ![GitHub repo size](https://img.shields.io/github/repo-size/LuizAlexandre21/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/LuizAlexandre21/README-template?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/LuizAlexandre21/Python_ETL/README-template?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/LuizAlexandre21/README-template?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/LuizAlexandre21/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/LuizAlexandre21/README-template?style=for-the-badge)
